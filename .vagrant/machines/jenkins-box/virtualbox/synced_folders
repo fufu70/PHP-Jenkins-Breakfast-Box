@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/install-jenkins":{"owner":"vagrant","group":"vagrant","guestpath":"/home/vagrant/install-jenkins","hostpath":"/Users/Fuzzy/jenkins-box/install-jenkins","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Fuzzy/jenkins-box","disabled":false,"__vagrantfile":true}}}
