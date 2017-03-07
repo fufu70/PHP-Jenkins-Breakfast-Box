@@ -1,6 +1,6 @@
 # Jenkins-Breakfast-Box
 
-I sit in my pajamas with an hour before work starts and all I want to do is setup a basic Jenkins server for my php project so that I can analyze the kerfluffle out of it. Screw waisting time figuring out how to setup a [chef server](https://github.com/pietervogelaar/chef-cookbook-jenkins-server) or [anisble away](https://github.com/HanXHX/ansible-jenkins-php) just to figure out what the [CRAP](http://www.crap4j.org/faq.html) is going on with my codebase. All I want is to input some commands to install and update my php jenkins box while eating some delicious php [pancakes](insert image link here).
+I sit in my pajamas with an hour before work starts and all I want to do is setup a basic Jenkins server for my php project so that I can analyze the kerfluffle out of it. Screw waisting time figuring out how to setup a [chef server](https://github.com/pietervogelaar/chef-cookbook-jenkins-server) or [anisble away](https://github.com/HanXHX/ansible-jenkins-php) just to figure out what the [CRAP](http://www.crap4j.org/faq.html) is going on with my codebase. All I want is to input some commands to install and update my php jenkins box while eating some delicious php [pancakes](https://github.com/fufu70/jenkins-php-box/raw/master/src/common/pancakes.jpg).
 
 ## The requirements
 
@@ -104,8 +104,8 @@ Sebastian Bergmann for creating the [Template for Jenkins Jobs for PHP Projects]
 
 Shrek for making it all [happen](http://i.giphy.com/soVPwjAd33L5m.gif)
 
-[unlock-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/images/icon48.png "Unlock Jenkins"
-[customize-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/images/icon48.png "Customize Jenkins"
-[plugins-installing-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/images/icon48.png "Plugins Installing"
-[admin-user-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/images/icon48.png "Admin User Creation"
-[installed-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/images/icon48.png "Jenkins is installed"
+[unlock-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/unlock-jenkins.png "Unlock Jenkins"
+[customize-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/customize-jenkins.png "Customize Jenkins"
+[plugins-installing-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/plugins-installing-jenkins.png "Plugins Installing"
+[admin-user-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/admin-user-jenkins.png "Admin User Creation"
+[installed-jenkins]: https://github.com/fufu70/jenkins-php-box/raw/master/src/common/installed-jenkins.png "Jenkins is installed"
