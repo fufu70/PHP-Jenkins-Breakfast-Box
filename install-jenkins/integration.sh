@@ -11,6 +11,6 @@ read -s J_PASSWORD
 echo
 
 sudo curl -L https://raw.githubusercontent.com/sebastianbergmann/php-jenkins-template/master/config.xml | \
-     java -jar jenkins-cli.jar -s http://localhost:8080 create-job php-template  --username "$J_USERNAME" --password "$J_PASSWORD"
+     java -jar jenkins-cli.jar -s http://localhost:8080 create-job php-breakfast  --username "$J_USERNAME" --password "$J_PASSWORD"
 
 sudo java -jar jenkins-cli.jar -s http://localhost:8080 reload-configuration  --username "$J_USERNAME" --password "$J_PASSWORD"

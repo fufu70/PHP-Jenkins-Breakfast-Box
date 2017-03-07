@@ -1,5 +1,6 @@
 #!/bin/bash
 # Install php tools necessary for jenkins
+sudo apt-get -y install php5 php5-curl php5-mcrypt
 
 # Install Composer
 sudo curl -sS https://getcomposer.org/installer | php
