@@ -40,7 +40,7 @@ Yea! I dont need no program telling me what to do ...
 What is this! More [instructions!](http://i.giphy.com/X7jENDat6V5Je.gif)
 
 After you make your own goddam decisions you adult you'll see a screen that requests you Unlock Jenkins
-![alt text](unlock-jenkins)
+![alt text][unlock-jenkins]
 
 All you need to do is run
 
@@ -51,16 +51,16 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 And copy and paste get the password shown on screen.
 
 You then come up to a screen that requests you to Customize Jenkins, choose the highlighted "Install suggested plugins" option
-![alt text](customize-jenkins)
+![alt text][customize-jenkins]
 
 Afterwards it will install a list of generalized selection of plugins
-![alt text](plugins-installing-jenkins)
+![alt text][plugins-installing-jenkins]
 
 Once all fo the plugins arre finished installing we will go to setting up the first admin user, dont forget your username and password, we'll need it later.
-![alt text](admin-user-jenkins)
+![alt text][admin-user-jenkins]
 
 JENKINS IS INSTALLED!~!~!~ 
-![alt text](installed)
+![alt text][installed-jenkins]
 
 Now we go back to our handy dandy terminal to run some more [commands](http://i.giphy.com/JIX9t2j0ZTN9S.gif)
 
@@ -108,4 +108,4 @@ Shrek for making it all [happen](http://i.giphy.com/soVPwjAd33L5m.gif)
 [customize-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/customize-jenkins.png "Customize Jenkins"
 [plugins-installing-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/plugins-installing-jenkins.png "Plugins Installing"
 [admin-user-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/admin-user-jenkins.png "Admin User Creation"
-[installed]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/installed-jenkins.png "Jenkins is installed"
+[installed-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/installed-jenkins.png "Jenkins is installed"
