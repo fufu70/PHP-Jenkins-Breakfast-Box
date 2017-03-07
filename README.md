@@ -60,7 +60,7 @@ Once all fo the plugins arre finished installing we will go to setting up the fi
 ![alt text](admin-user-jenkins)
 
 JENKINS IS INSTALLED!~!~!~ 
-![alt text](installed-jenkins)
+![alt text](installed)
 
 Now we go back to our handy dandy terminal to run some more [commands](http://i.giphy.com/JIX9t2j0ZTN9S.gif)
 
@@ -108,4 +108,4 @@ Shrek for making it all [happen](http://i.giphy.com/soVPwjAd33L5m.gif)
 [customize-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/customize-jenkins.png "Customize Jenkins"
 [plugins-installing-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/plugins-installing-jenkins.png "Plugins Installing"
 [admin-user-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/admin-user-jenkins.png "Admin User Creation"
-[installed-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/installed-jenkins.png "Jenkins is installed"
+[installed]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/installed-jenkins.png "Jenkins is installed"
