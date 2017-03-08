@@ -100,9 +100,11 @@ Your done now, you should be anyways, When you go back to your running jenkins i
 
 Ok, your work alarm has [rung](http://i.giphy.com/Tohtjw8GoSmpa.gif)! Get back to your [Hacking](http://i.giphy.com/MGaacoiAlAti0.gif) you filthy developer!
 
-## Background Information
+## General Information
 
 A basic jenkins environment for PHP codebases strictly for ubuntu-14.04. Its not fully automatic but is an aid in starting up the project simply using shell scripts as a guide.
+
+The default repository for the job is the [yii-deadbody-php](https://github.com/fufu70/deadbody-php) project. It is a good aid in testing the PHP-Jenkins-Breakfast-Box.
 
 ## Thanks to:
 
