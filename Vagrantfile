@@ -18,7 +18,7 @@ wget -q -O - http://pkg.jenkins-ci.org/debian-stable/jenkins-ci.org.key | sudo a
 sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 apt-get -y update
 
-echo "You Installed and updated jenkins ... YAY! Now run 'vagrant ssh', and in the '/home/vagrant/' dir go to run 'sudo bash install-jenkins/install.sh'"
+echo "You Installed the PHP-Jenkins-Breakfast-Box ... YAY! Run 'vagrant ssh', and 'sudo bash ~/install-jenkins/install.sh'"
 
 EOF
 
@@ -26,9 +26,9 @@ def set_hostname(server)
   server.vm.provision 'shell', inline: "hostname #{server.vm.hostname}"
 end
 Vagrant.configure("2") do |config|
-  config.vm.define 'jenkins-box' do |n|
+  config.vm.define 'php-jenkins-breakfast-box' do |n|
     n.vm.box = 'bento/ubuntu-14.04'
-    n.vm.hostname = 'jenkins-box'
+    n.vm.hostname = 'php-jenkins-breakfast-box'
     n.vm.network 'private_network', ip: '192.168.205.20'
     n.vm.provision :shell, inline: JENKINS_SCRIPT.dup
     n.vm.synced_folder "install-jenkins/", "/home/vagrant/install-jenkins", owner: "vagrant", group: "vagrant"

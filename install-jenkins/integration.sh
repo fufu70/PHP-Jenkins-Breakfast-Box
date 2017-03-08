@@ -23,6 +23,6 @@ if [ "$HAS_GIT_REPO" == "y" ]; then
 fi
 
 sudo cat ~/install-jenkins/data/config.xml | \
-     java -jar jenkins-cli.jar -s http://localhost:8080 create-job php-breakfast-job  --username "$J_USERNAME" --password "$J_PASSWORD"
+     java -jar jenkins-cli.jar -s http://localhost:8080 create-job php-breakfast-box-job  --username "$J_USERNAME" --password "$J_PASSWORD"
 
 sudo java -jar jenkins-cli.jar -s http://localhost:8080 reload-configuration  --username "$J_USERNAME" --password "$J_PASSWORD"

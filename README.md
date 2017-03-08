@@ -1,10 +1,12 @@
-# Jenkins-Breakfast-Box
+# PHP-Jenkins-Breakfast-Box
 
-I sit in my pajamas with an hour before work starts and all I want to do is setup a basic Jenkins server for my php project so that I can analyze the kerfluffle out of it. Screw waisting time figuring out how to setup a [chef server](https://github.com/pietervogelaar/chef-cookbook-jenkins-server) or [anisble away](https://github.com/HanXHX/ansible-jenkins-php) just to figure out what the [CRAP](http://www.crap4j.org/faq.html) is going on with my codebase. All I want is to input some commands to install and update my php jenkins box while eating some delicious php [pancakes](https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/pancakes.jpg).
+I'm sitting in my pajamas an hour before work starts. All I want is a Jenkins server for my PHP project to analyze the kerfluffle out of is fart box. Screw wasting time figuring out [Chef](https://github.com/pietervogelaar/chef-cookbook-jenkins-server) or [Anisble](https://github.com/HanXHX/ansible-jenkins-php). I just want to figure out what the [C.R.A.P.](http://www.crap4j.org/faq.html) is going on with my PHP: HP project. All I want is to input some commands, install my PHP: HP: HP jenkins box while eating some delicious PHPancakes.
+
+![alt text][php-pancakes]
 
 ## The requirements
 
-You thought that this was just going to be a Download And Analyze (DAA) project, but you are mistaken! To run the jenkins breakfast box we still need to install some dependencies:
+You thought that was a Download And Analyze (DAA) project, **but** you are mistaken! To run the PHP: HP: HP: HP-Jenkins-Breakfast-Box we need to install dependencies:
 
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
   * Make sure to download the latest version, even if you already installed VirtualBox before.
@@ -15,40 +17,40 @@ You thought that this was just going to be a Download And Analyze (DAA) project,
 
 ## The process
 
-To run the breakfast box simply go to your terminal, clone the repository, and run vagrant up:
+To run the breakfast box go to your terminal, clone the repository, and run **vagrant up**:
 
 ```shell
 $ git clone https://github.com/fufu70/jenkins-php-box
 $ vagrant up
 ```
 
-After the breakfast box "up"s it will give some instructions as to what to do next:
+After the PHP: HP: HP: HP: HP-Jenkins-Breakfast-Box "up"s it will gives instructions on what to do:
 
-> You Installed and updated jenkins ... YAY! Now run 'vagrant ssh', and in the '/home/vagrant/' dir go to run 'sudo bash install-jenkins/install.sh'
+> You Installed the PHP-Jenkins-Breakfast-Box ... YAY! Run 'vagrant ssh', and 'sudo bash ~/install-jenkins/install.sh'
 
-Dont tell me what to do Vagrant! Im my own well adgusted programmer! I know what i'll do:
+Dont tell me what to do Vagrant! Im a [well adgusted programmer](http://i.giphy.com/VD9NtdBN9CwqQ.gif)! I know, i'll:
 
 ```shell
 $ vagrant ssh
 $ sudo bash ~/install-jenkins/install.sh
 ```
 
-Yea! I dont need no program telling me what to do ...
+Yea! [I don't need no program telling me what to do ...](http://i.giphy.com/3o6ZtmMXFewRk4WKFG.gif)
 
-> Ok! So now go to your browser and view this IP address at port http://192.168.205.20:8080 and setup your jenkins machine
+> Ok! Go to your browser at [http://192.168.205.20:8080](http://192.168.205.20:8080) to setup your PHP-Jenkins-Breakfast-Box
 
-What is this! More [instructions!](http://i.giphy.com/X7jENDat6V5Je.gif)
+What's this! More [instructions!](http://i.giphy.com/X7jENDat6V5Je.gif)
 
-After you make your own goddam decisions you adult you'll see a screen that requests you Unlock Jenkins
+After you make your own goddam decisions [you adult](http://i.giphy.com/l0Iyf9vXAJFO7qVZS.gif) you'll see a screen that requests you Unlock Jenkins
 ![alt text][unlock-jenkins]
 
-All you need to do is run
+Run:
 
 ```shell
 $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-And copy and paste get the password shown on screen.
+Copy and paste the password shown after the command is run.
 
 You then come up to a screen that requests you to Customize Jenkins, choose the highlighted "Install suggested plugins" option
 ![alt text][customize-jenkins]
@@ -56,56 +58,62 @@ You then come up to a screen that requests you to Customize Jenkins, choose the 
 Afterwards it will install a list of generalized selection of plugins
 ![alt text][plugins-installing-jenkins]
 
-Once all fo the plugins arre finished installing we will go to setting up the first admin user, dont forget your username and password, we'll need it later.
+Once the plugins are installed create the [first](http://i.giphy.com/FYy1pE8KHCmc0.gif) admin user. Don't forget the username and password, we'll need it later.
 ![alt text][admin-user-jenkins]
 
 JENKINS IS INSTALLED!~!~!~ 
 ![alt text][installed-jenkins]
 
-Now we go back to our handy dandy terminal to run some more [commands](http://i.giphy.com/JIX9t2j0ZTN9S.gif)
+Now we go back to our [handy dandy terminal](http://i.giphy.com/6edVpzX8cg41O.gif) to run more [commands](http://i.giphy.com/JIX9t2j0ZTN9S.gif)
 
-U should still be in the vagrant machines shell, if not run:
+U should still be in the [vagrant](http://www.fotothing.com/photos/a74/a74444e446de3816566011350e7eb4ca.jpg) machines shell, if not run:
 
 ```shell
 $ vagrant ssh
 ```
 
-OK! So all we gotta do is run 3 more commands and we should be done with shell. These commands go to install some more [php specific plugins](https://github.com/fufu70/jenkins-php-box/blob/master/install-jenkins/plugins.sh), local [php tools](https://github.com/fufu70/jenkins-php-box/blob/master/install-jenkins/php-tools.sh) that the plugins will interface with, and [create a job](https://github.com/fufu70/jenkins-php-box/blob/master/install-jenkins/integration.sh) to combine these plugins together.
+OK! So all we gotta do is run 3 more commands and we should be done with shell. These commands go to install some more [php specific plugins](https://github.com/fufu70/jenkins-php-box/blob/master/install-jenkins/plugins.sh), local [php tools](https://github.com/fufu70/jenkins-php-box/blob/master/install-jenkins/php-tools.sh) that the plugins interface with, and [create a job](https://github.com/fufu70/jenkins-php-box/blob/master/install-jenkins/integration.sh) to connect with these plugins.
 
-The first command will be the the php tools installation.
+The first command will be php tools.
 
 ```shell
 $ sudo bash ~/install-jenkins/php-tools.sh
 ```
 
-Then install the plugins to integrate with your tools. You will need to use your username and password for jenkins as it will connect with jenkins through a jenkins-cli.jar
+Then install the plugins for the php tools. You will need a username and password for jenkins as it connects to the PHP-Jenkins-Breakfast-Box through a **jenkins-cli.jar**.
 
 ```shell
 $ sudo bash ~/install-jenkins/plugins.sh
 ```
 
-Once all of the plugins have been installed we want to be able to actually create a jobbo! Dont forget your username and password.
+Once the plugins have been installed we want to actually create a [job!](http://i.giphy.com/RBDXLadJCxs6A.gif) Don't forget that username and password.
 
 ```shell
 $ sudo bash ~/install-jenkins/integration.sh
 ```
 
-Your done now, you should be anyways, When you go back to your running jenkins instance you should see your job just hanging out, php-breakfast. 
+When running this command you'll be given an option to input a personal repository. If **N** is selected then the repository URL can be changed from the config section of the jenkins job at [http://192.168.205.20:8080/job/php-breakfast-box-job/configure](http://192.168.205.20:8080/job/php-breakfast-box-job/configure). The second option below is the **Source Code Management** config, here you can set a repository url and credentials:
+
+![alt text][integrate-repo-jenkins]
+
+Your done now, you should be anyways, When you go back to your running jenkins instance you should see your job just hanging out, php-breakfast-box-job. 
 
 Ok, your work alarm has [rung](http://i.giphy.com/Tohtjw8GoSmpa.gif)! Get back to your [Hacking](http://i.giphy.com/MGaacoiAlAti0.gif) you filthy developer!
 
 ## Background Information
 
-A basic jenkins environment for PHP codebases strictly for ubuntu-14.04. Its not fully automatic but is an aid in starting up the project simply using shell scripts to guide you along the way.
+A basic jenkins environment for PHP codebases strictly for ubuntu-14.04. Its not fully automatic but is an aid in starting up the project simply using shell scripts as a guide.
 
 ## Thanks to:
 
 Sebastian Bergmann for creating the [Template for Jenkins Jobs for PHP Projects](http://jenkins-php.org/index.html)
 
-Shrek for making it all [happen](http://i.giphy.com/soVPwjAd33L5m.gif)
+Papa Johns for making it all [happen](http://static5.businessinsider.com/image/568ac02cc08a806f008b69d7-2400/rtr2u9g0.jpg)
 
+[php-pancakes]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/pancakes.jpg "PHP Pancakes"
 [unlock-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/unlock-jenkins.png "Unlock Jenkins"
 [customize-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/customize-jenkins.png "Customize Jenkins"
 [plugins-installing-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/plugins-installing-jenkins.png "Plugins Installing"
 [admin-user-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/admin-user-jenkins.png "Admin User Creation"
 [installed-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/installed-jenkins.png "Jenkins is installed"
+[integrate-repo-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/integrate-repo-jenkins.png "Integrate repository inside of Jenkins job"
