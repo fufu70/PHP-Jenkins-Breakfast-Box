@@ -22,7 +22,6 @@ if [ "$HAS_GIT_REPO" == "y" ]; then
 	sudo sed -i "s,https://github.com/fufu70/deadbody-php,$GIT_REPO_URL,g" ~/install-jenkins/data/config.xml
 fi
 
-sudo cat ~/install-jenkins/data/config.xml | \
-     java -jar jenkins-cli.jar -s http://localhost:8080 create-job php-breakfast-box-job  --username "$J_USERNAME" --password "$J_PASSWORD"
+sudo cat ~/install-jenkins/data/config.xml | java -jar jenkins-cli.jar -s http://localhost:8080 create-job php-breakfast-box-job  --username "$J_USERNAME" --password "$J_PASSWORD"
 
-sudo java -jar jenkins-cli.jar -s http://localhost:8080 reload-configuration  --username "$J_USERNAME" --password "$J_PASSWORD"
+sudo java -jar jenskins-cli.jar -s http://localhost:8080 reload-configuration  --username "$J_USERNAME" --password "$J_PASSWORD"

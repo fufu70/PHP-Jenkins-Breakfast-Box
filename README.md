@@ -100,6 +100,50 @@ Your done now, you should be anyways, When you go back to your running jenkins i
 
 Ok, your work alarm has [rung](http://i.giphy.com/Tohtjw8GoSmpa.gif)! Get back to your [Hacking](http://i.giphy.com/MGaacoiAlAti0.gif) you filthy developer!
 
+## Troubleshooting
+
+### Content Security Policy Issues
+
+Okay my fellow [scrubs](http://i.giphy.com/YjJZKbm2kNN7i.gif)! You finally got your [first job to run](http://i.giphy.com/omRfGp0CeRShi.gif), you head over to your Clover Code Coverage html reports (CCCHR) at [http://192.168.205.20:8080/job/php-breakfast-box-job/cloverphp/](http://192.168.205.20:8080/job/php-breakfast-box-job/cloverphp/). [Whats this!](http://i.giphy.com/ToMjGpnXBTw7vnokxhu.gif)
+
+![alt text][blocked-font-clover]
+
+What are all these console errors!
+
+![alt text][blocked-script-console-errors]
+
+This is a direct issue with the [Content Security Policy](https://wiki.jenkins-ci.org/display/JENKINS/Configuring+Content+Security+Policy) issue. Were going to run a script inside of Jenkins internal console. Go to [http://192.168.205.20:8080/script](http://192.168.205.20:8080/script) and run:
+
+```groovy
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
+```
+
+Inside of the script console.
+
+![alt text][script-console-execution]
+
+After running the script go back to the CCCHR page at [http://192.168.205.20:8080/job/php-breakfast-box-job/cloverphp/](http://192.168.205.20:8080/job/php-breakfast-box-job/cloverphp/), hard refresh the page to clear your current [cache](http://i.giphy.com/VkYOrBIQv520M.gif), and view the splendor of no Content Security!
+
+![alt text][unblocked-font-clover]
+
+### Markup Formating in the Job Description
+
+Cruising to your job you see a odd [bug](http://i.giphy.com/xTiTnGuHmcaQeWSryE.gif) out of the corner of your [eye!](http://i.giphy.com/e9R0ytwguezTO.gif) 
+
+![alt text][html-formatting-issue]
+
+[Thats not suppose to be like that but it is be like that ...](http://i.giphy.com/akTeqZhGsdHLq.gif)
+
+The problems of global configuration policies! Simply go to [http://192.168.205.20:8080/configureSecurity/](http://192.168.205.20:8080/configureSecurity/) to set the Markup Formatter value to be **safe html**
+
+![alt text][markup-formatter-jenkins]
+
+After you click save you can now view those pretty little pdepend graphs.
+
+![alt text][html-formatting-solved]
+
+Keep on [analyzing](http://i.giphy.com/udhngZK2IFTc4.gif) that code!
+
 ## General Information
 
 A basic jenkins environment for PHP codebases strictly for ubuntu-14.04. Its not fully automatic but is an aid in starting up the project simply using shell scripts as a guide.
@@ -119,3 +163,12 @@ Papa Johns for making it all [happen](http://static5.businessinsider.com/image/5
 [admin-user-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/admin-user-jenkins.png "Admin User Creation"
 [installed-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/installed-jenkins.png "Jenkins is installed"
 [integrate-repo-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/integrate-repo-jenkins.png "Integrate repository inside of Jenkins job"
+
+[blocked-font-clover]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/blocked-font-clover.png "Blocked Font at Clover HTML page"
+[blocked-script-console-errors]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/blocked-script-console-errors.png "Blocked Script Console Errors"
+[script-console-execution]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/script-console-execution.png "Fix blocked script execution."
+[unblocked-font-clover]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/unblocked-font-clover.png "Fixed blocked font."
+
+[html-formatting-issue]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/html-formatting-issue.png "HTML formatting issue."
+[markup-formatter-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/markup-formatter-jenkins.png "Setting up the Markup Formatter for html inside of job descriptions"
+[html-formatting-sovled]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/html-formatting-solved.png "HTML formatting issue resolved."
