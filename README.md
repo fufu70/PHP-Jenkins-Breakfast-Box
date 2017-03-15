@@ -140,7 +140,7 @@ The problems of global configuration policies! Simply go to [http://192.168.205.
 
 After you click save you can now view those pretty little pdepend graphs.
 
-![alt text][html-formatting-solved]
+![alt text][html-format-solved]
 
 Keep on [analyzing](http://i.giphy.com/udhngZK2IFTc4.gif) that code!
 
@@ -171,4 +171,4 @@ Papa Johns for making it all [happen](http://static5.businessinsider.com/image/5
 
 [html-formatting-issue]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/html-formatting-issue.png "HTML formatting issue."
 [markup-formatter-jenkins]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/markup-formatter-jenkins.png "Setting up the Markup Formatter for html inside of job descriptions"
-[html-formatting-sovled]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/html-formatting-solved.png "HTML formatting issue resolved."
+[html-format-sovled]: https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/html-formatting-solved.png "HTML formatting issue resolved."
