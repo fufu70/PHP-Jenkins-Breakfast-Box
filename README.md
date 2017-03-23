@@ -9,6 +9,7 @@ I'm sitting in my pajamas an hour before work starts. All I want is a Jenkins se
 * [The Requirements](#the-requirements)
 * [The Process](#the-process)
 * [Troubleshooting](#troubleshooting)
+* [The Tools](#the-tools)
 * [General Information](#general-information)
 * [Thanks to](#thanks-to)
 
@@ -151,6 +152,60 @@ After you click save you can now view those pretty little pdepend graphs.
 ![alt text](https://raw.githubusercontent.com/fufu70/jenkins-php-box/master/common/html-formatting-solved.png "HTML formatting issue resolved.")
 
 Keep on [analyzing](http://i.giphy.com/udhngZK2IFTc4.gif) that code!
+
+## The Tools
+
+The PHP Jenkins Breakfast Box comes with several different tools for code analysis, 7 to be exact. 
+
+### [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+
+Rummages through your code to let you know of code that does not follow your linting rules.
+
+### [PHP Unit](https://phpunit.de/)
+
+Do you like [CRAP?](https://phpunit.de/manual/current/en/code-coverage-analysis.html) Do you like [Code Coverage?](https://en.wikipedia.org/wiki/Code_coverage) Do you enjoy the [relaxing sounds](https://media.giphy.com/media/vSO1hQUdzBu0w/giphy.gif) of your test cases failing? Look no further, PHPUnit has it all. This little code analysis tool will point out method that have a cyclomatic complexity higher than 30 (higher than 100 is troublesome), show you your total code coverage for a class (the clover coverage section). and let you know how many test cases have passed or failed.
+
+### [PHPLOC](https://github.com/sebastianbergmann/phploc)
+
+Do you like generalized information??? Well? [Do you?](https://media.giphy.com/media/Yq9Q0G4Wi1Ne/giphy.gif) Well PHPLOC will do just that, let you know the total amount of <blank> in your codebase, <blank> meaning:
+
+* Lines of Code (LOC)
+* Comment Lines of Code (CLOC)
+* Non-Comment Lines of Code (NCLOC)
+* Logical Lines of Code (LLOC)
+* Average Complexity per LLOC
+* Average Complexity per Class
+* Namespaces
+* Interfaces
+* Traits
+* Classes
+* Methods
+* Functions
+* Constants
+* ...
+
+Coupled with the phploc plugin in Jenkins you can see your codebase grow with each commit and connect it with growing or shrinking Cyclomatic Complexity.
+
+### [PDepend](https://pdepend.org/documentation/software-metrics/index.html)
+
+When you first look at it you ask yourself ... [WTF](https://media.giphy.com/media/zXtbIHJtizoac/giphy.gif) am i looking at! You have some [weird graph](https://pdepend.org/documentation/handbook/reports/abstraction-instability-chart.html) that has instability on the vertical side, and abstraction on the other in conjunction with a [pyramid](https://pdepend.org/documentation/handbook/reports/overview-pyramid.html) that tells you the Inheritance, Coupling, and Size / Complexity of your codebase.
+
+### [PHPMD](https://phpmd.org/)
+
+Operates similarly to the [PMD](https://pmd.github.io/) project for Java. To copy directly from PHPMD's website, it simply looks for:
+
+> * Possible bugs
+> * Suboptimal code
+> * Overcomplicated expressions
+> * Unused parameters, methods, properties
+
+### [PHPCPD](https://github.com/sebastianbergmann/phpcpd)
+
+The PHP Copy Paste Detector. Operates similarly to [PMD's CPD](https://pmd.github.io/pmd-5.5.4/usage/cpd-usage.html).
+
+### [PHPDox](http://phpdox.de/)
+
+PHPDox, written by [Arne Blankerts](https://thephp.cc/company/consultants/arne-blankerts), is used to create PHP documentation on the fly from currently documented code.
 
 ## General Information
 
