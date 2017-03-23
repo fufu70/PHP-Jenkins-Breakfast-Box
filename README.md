@@ -4,7 +4,15 @@ I'm sitting in my pajamas an hour before work starts. All I want is a Jenkins se
 
 ![alt text][php-pancakes]
 
-## The requirements
+## Table Of Contents:
+
+* [The Requirements](#the-requirements)
+* [The Process](#the-process)
+* [Troubleshooting](#troubleshooting)
+* [General Information](#general-information)
+* [Thanks to](#thanks-to)
+
+## The Requirements
 
 You thought that was a Download And Analyze (DAA) project, **but** you are mistaken! To run the PHP: HP: HP: HP-Jenkins-Breakfast-Box we need to install dependencies:
 
@@ -15,7 +23,7 @@ You thought that was a Download And Analyze (DAA) project, **but** you are mista
   * AOWTMV is 1.8.6
 * [A Computer](http://i.giphy.com/xTiTnJ3BooiDs8dL7W.gif)
 
-## The process
+## The Process
 
 To run the breakfast box go to your terminal, clone the repository, and run **vagrant up**:
 
