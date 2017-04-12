@@ -213,6 +213,10 @@ A basic jenkins environment for PHP codebases strictly for ubuntu-14.04. Its not
 
 The default repository for the job is the [yii-deadbody-php](https://github.com/fufu70/deadbody-php) project. It is a good aid in testing the PHP-Jenkins-Breakfast-Box.
 
+## TLDC (To Long Didn't Code)
+
+To quickly setup an instance checkout the Vagrantfile for the result of the process: [PHP-Jenkins-Vagrant-File](https://github.com/fufu70/PHP-Jenkins-Vagrant-File)
+
 ## Thanks to:
 
 Sebastian Bergmann for creating the [Template for Jenkins Jobs for PHP Projects](http://jenkins-php.org/index.html)
